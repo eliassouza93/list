@@ -5,23 +5,24 @@ import styles from './Pages.module.css'
 import { Post } from '../Components/List/Post'
 
 
-
-
 export function Home() {
-    const [receive, setReceive] = useState('')
+    const [posts, setPosts] = useState<string[]>([]) 
+
+    const handleAddPost = (newPost: string) => {
+        setPosts(prevPosts => [...prevPosts, newPost]) 
+    }
+
     return (
         <div className={styles.Container}>
-            <InputText setDatas={setReceive} />
+            <InputText setDatas={handleAddPost} /> 
             <div className={styles.emptyContainer}>
                 <div className={styles.Box}>
                     <div className={styles.Titulo}>
                         <h5>Tarefas criadas <span>0</span> </h5>
                         <p>Concluídas <span>0</span></p>
                     </div>
-                    <Empty />
-                    <Post datas={receive} />
+                    {posts.length === 0 ? <Empty /> : <Post datas={posts} />}  
                 </div>
             </div>
         </div>
-    )
-}
+    )}
