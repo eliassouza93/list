@@ -2,14 +2,14 @@ import styles from './Post.module.css'
 
 
 interface PostType {
-  datas: string[] // Altere a interface para indicar que 'datas' é um array de strings
+  datas: string[]  
 }
 
 export function Post({ datas }: PostType) {
   return (
-    <div className={styles.postContainer}> {/* Aplique estilos, se necessário */}
+    <div className={styles.postContainer}>  
       {datas.map((dado, index) => (
-        <p key={index} className={styles.postParagraph}> {/* Aplique estilos, se necessário */}
+        <p key={index} className={styles.postParagraph}>  
           {dado}
         </p>
       ))}
