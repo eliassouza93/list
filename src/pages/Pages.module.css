@@ -7,12 +7,44 @@
     display: flex;
     align-items: center;
     justify-content: center;
- 
-
 }
 
 .Box {
     width: 738px;
     height: 287px;
     margin-top: 90px;
+
+}
+
+.Titulo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    color: #4EA8DE;
+
+    span {
+        color: #F2F2F2;
+        background-color: #333333;
+        padding: 6px;
+        border-radius: 50%;
+        margin-left: 5px;
+        width: 26px;
+        height: 26px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h5 {
+        color: #8284FA;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    p {
+        color: #8284FA;
+        font-weight: bold;
+    }
+
+
 }

@@ -11,11 +11,13 @@ export function Home() {
             <InputText />
             <div className={styles.emptyContainer}>
                 <div className={styles.Box}>
+                    <div className={styles.Titulo}>
+                        <h5>Tarefas criadas <span>0</span> </h5>  
+                        <p>Concluídas <span>0</span></p> 
+                    </div>
                     <Empty />
                 </div>
-
             </div>
-
         </div>
     )
 }
