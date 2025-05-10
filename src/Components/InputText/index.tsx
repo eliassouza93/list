@@ -18,12 +18,13 @@ export function InputText({ setDatas }: InputTextType) {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setDatas(inputValue)
-    setInputValue('')
+    //setInputValue('')
   }
   return (
     <form className={styles.Box} onSubmit={handleSubmit}>
       <input
         className={styles.Container}
+        required
         placeholder='Adicione uma nova tarefa'
         type="text"
         value={inputValue}

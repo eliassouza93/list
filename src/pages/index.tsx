@@ -6,23 +6,32 @@ import { Post } from '../Components/List/Post'
 
 
 export function Home() {
-    const [posts, setPosts] = useState<string[]>([]) 
+    const [posts, setPosts] = useState<string[]>([])
+    const [cont, setCont] = useState(0)
+
+
 
     const handleAddPost = (newPost: string) => {
-        setPosts(prevPosts => [...prevPosts, newPost]) 
+        setPosts(prevPosts => [...prevPosts, newPost])
+        if (newPost.trim() !== '') {
+            setCont(prevCont => prevCont + 1)
+        }
     }
+
+
 
     return (
         <div className={styles.Container}>
-            <InputText setDatas={handleAddPost} /> 
+            <InputText setDatas={handleAddPost} />
             <div className={styles.emptyContainer}>
                 <div className={styles.Box}>
                     <div className={styles.Titulo}>
-                        <h5>Tarefas criadas <span>0</span> </h5>
+                        <h5>Tarefas criadas <span> {cont} </span> </h5>
                         <p>Concluídas <span>0</span></p>
                     </div>
-                    {posts.length === 0 ? <Empty /> : <Post datas={posts} />}  
+                    {posts.length === 0 ? <Empty /> : <Post datas={posts} />}
                 </div>
             </div>
         </div>
-    )}
+    )
+}
