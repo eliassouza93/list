@@ -1,0 +1,24 @@
+.Box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.Container {
+    width: 638px;
+    height: 54px;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+    padding: 1rem;
+    line-height: 140%;
+    margin-top: -25px;
+
+
+}
+
+.container:focus {
+    border-color: var(--purple-dark);
+}

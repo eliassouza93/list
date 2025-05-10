@@ -1,0 +1,18 @@
+.Container {
+    background-color: #1A1A1A;
+    height: 100vh;
+}
+
+.emptyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+
+}
+
+.Box {
+    width: 738px;
+    height: 287px;
+    margin-top: 90px;
+}

@@ -1,0 +1,31 @@
+ 
+.BoxContainer {
+  display: flex;  
+  width: 120px;
+  height: 54px;  
+   margin-top: -25px;
+   
+   
+}
+
+.Container {
+  display: flex;         
+  flex: 1;
+  align-items: center;  
+  justify-content: center;  
+  background-color: #1E6F9F;
+  height: 100%;      
+  font-weight: bold;
+  color: #F2F2F2;
+  border-radius: 10px;
+  padding: 0;           
+  border: none;
+  cursor: pointer;
+
+}
+
+.imagem {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;  
+}
