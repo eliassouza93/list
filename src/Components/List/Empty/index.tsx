@@ -1,5 +1,5 @@
 import styles from './Empty.module.css'
-import empty from '../../assets/empty.png'
+import empty from '../../../assets/empty.png'
 
 export function Empty() {
   return (
