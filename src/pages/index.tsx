@@ -9,16 +9,12 @@ export function Home() {
     const [posts, setPosts] = useState<string[]>([])
     const [cont, setCont] = useState(0)
 
-
-
     const handleAddPost = (newPost: string) => {
         setPosts(prevPosts => [...prevPosts, newPost])
         if (newPost.trim() !== '') {
             setCont(prevCont => prevCont + 1)
         }
     }
-
-
 
     return (
         <div className={styles.Container}>

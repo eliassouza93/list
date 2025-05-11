@@ -24,7 +24,7 @@ export function InputText({ setDatas }: InputTextType) {
     <form className={styles.Box} onSubmit={handleSubmit}>
       <input
         className={styles.Container}
-        required
+      //  required
         placeholder='Adicione uma nova tarefa'
         type="text"
         value={inputValue}

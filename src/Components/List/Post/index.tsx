@@ -1,17 +1,21 @@
 import styles from './Post.module.css'
-
+import lixeira from '../../../assets/lixeira.png'
 
 interface PostType {
-  datas: string[]  
+  datas: string[]
 }
 
 export function Post({ datas }: PostType) {
   return (
-    <div className={styles.postContainer}>  
+    <div className={styles.PostContainer}>
       {datas.map((dado, index) => (
-        <p key={index} className={styles.postParagraph}>  
-          {dado}
-        </p>
+        <div className={styles.BoxContainer}>
+          <span className={styles.Circle}>0</span>
+          <p key={index} className={styles.postParagraph}>
+            {dado}
+            <img src={lixeira} alt="" />
+          </p>
+        </div>
       ))}
     </div>
   )
