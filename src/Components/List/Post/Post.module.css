@@ -1,3 +1,4 @@
+ 
 .PostContainer {}
 
 .BoxContainer {
@@ -6,11 +7,11 @@
   background-color: #262626;
   margin-top: 10px;
   border-radius: 8px;
-  display: flex;          
-  justify-content: space-between;  
-  align-items: center;       
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  position: relative;     
+  position: relative;
 }
 
 .BoxContainer p {
@@ -20,24 +21,48 @@
   margin-left: 20px;
   text-overflow: ellipsis;
   word-wrap: break-word;
-  display: -webkit-box; 
-  -webkit-line-clamp: 2; 
-  -webkit-box-orient: vertical; 
-  max-height: 4.2rem;   
-  line-height: 1.4rem;  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 4.2rem;
+  line-height: 1.4rem;
   padding: 20px;
   margin-bottom: 13px;
+  text-decoration: none;  
+}
+
+.BoxContainer p.postParagraphCompleted {
+  text-decoration: line-through;  
+  color: #888;  
 }
 
 .BoxContainer img {
   width: 24px;
   height: 24px;
-  position: absolute;  
-  top: 50%;          
-  right: 20px;        
-  transform: translateY(-50%); 
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .Circle {
- 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #007bff;  
+  color: #007bff;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.Circle.CircleCompleted {
+  background-color: #A05CF0;  
+  border-color: #A05CF0; 
+  color: white;  
+  font-weight: bold;
 }
