@@ -44,6 +44,7 @@ export const CompletedProvider: React.FC<{ children: React.ReactNode; initialDat
 
   return (
     <CompletedContext.Provider
+
       value={{
         datas,
         addItem,
@@ -58,7 +59,6 @@ export const CompletedProvider: React.FC<{ children: React.ReactNode; initialDat
     </CompletedContext.Provider>
   )
 }
-
 export const useCompleted = () => {
   const context = useContext(CompletedContext)
   if (!context) {
